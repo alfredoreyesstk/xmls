@@ -1,0 +1,15 @@
+﻿<xml>
+	<modelo>
+		<entidad nombre="Continente" idToSelect="IdContinente" tabla="TContinente" gridRowsPerPage="3" search="Complex" add="true" modelo="admon" edit="true" delete="true" >
+			<atributos>
+				<atributo nombre="IdContinente" tipo="int" campo="CIdContinente" requerido="1" idunico="1" readonly="1" control="textbox" OnSearch="0" hiddeOnResults="0" />
+				<atributo nombre="NombreContinente" campo="CNombreContinente" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+				<atributo nombre="Activo" campo="CActivo" tipo="bool" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+							
+			</atributos>
+
+            <relacionesEntidades>
+            </relacionesEntidades>
+		</entidad>
+	</modelo>
+</xml>

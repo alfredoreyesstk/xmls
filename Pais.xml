@@ -1,0 +1,15 @@
+﻿<xml>
+	<modelo>
+		<entidad nombre="Pais" idToSelect="IdPais" tabla="TPais" gridRowsPerPage="3" search="Complex" modelo="admon" add="true" edit="true" delete="true" >
+			<atributos>
+				<atributo nombre="IdPais" tipo="int" campo="CIdPais" requerido="1" idunico="1" readonly="1" control="textbox" OnSearch="0" hiddeOnResults="0" />
+				<atributo nombre="NombrePais" campo="CNombrePais" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+				<atributo nombre="Habitantes" campo="CHabitantes" tipo="double" requerido="0" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+				
+			</atributos>
+
+            <relacionesEntidades>
+            </relacionesEntidades>
+		</entidad>
+	</modelo>
+</xml>
