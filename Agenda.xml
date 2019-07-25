@@ -1,0 +1,26 @@
+<xml>
+	<modelo>
+		<entidad nombre="Agenda" tabla="Agenda" idToSelect="Agenda_ID" gridRowsPerPage="25" module="Fiduciario" search="Complex" add="true" edit="true" delete="true" >
+			 <atributos>
+			     <atributo nombre="Agenda_ID" campo="ID"  tipo="int" requerido="1" idunico="1" readonly="1" control="textbox" OnSearch="0" hiddeOnResults="0" />
+<atributo nombre="Agenda_Fideicomiso" campo="Fideicomiso" tipo="int" idunico="0" requerido="1" control="popup_search" readonly="0" OnSearch="0" hiddeOnResults="0" idrelacionentidad="42" />
+<atributo nombre="Agenda_Subfiso" campo="Subfiso" tipo="int" idunico="0" requerido="1" control="popup_search" readonly="0" OnSearch="1" hiddeOnResults="0" idrelacionentidad="43" />
+<atributo nombre="Agenda_Evento" campo="Evento" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+<atributo nombre="Agenda_Fecha" campo="Fecha" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+<atributo nombre="Agenda_Estatus" campo="Estatus" tipo="string" idunico="0" requerido="1" control="combofijo" readonly="0" OnSearch="1" hiddeOnResults="0" NewColumn="0" lookup="0">
+	 <valores>
+			<valor>APLICADO</valor>
+			<valor>ACTIVO</valor>
+    </valores>
+</atributo>
+<atributo nombre="Agenda_Observacion" campo="Observacion" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+<atributo nombre="Agenda_Concovados" campo="Concovados" tipo="string" requerido="0" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+			</atributos>
+
+            <relacionesEntidades>
+				<relacion idrelacionentidad="42" nombre="Fideicomiso" idrelacion="Fideicomiso_ID" fieldToDisplay="Fideicomiso_GeneralesNumero" tipofieldToDisplay="int"  xmlFile="Fideicomiso.xml" ></relacion>   	
+				<relacion idrelacionentidad="43" nombre="Subfiso" idrelacion="Subfiso_ID" fieldToDisplay="Subfiso_Numero" tipofieldToDisplay="int"  xmlFile="Subfiso.xml" ></relacion>   	
+            </relacionesEntidades>
+		</entidad>
+	</modelo>
+</xml>
