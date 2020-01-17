@@ -1,0 +1,15 @@
+﻿<xml>
+	<modelo>
+		<entidad nombre="Banco" idToSelect="IdBanco" tabla="TBanco" gridRowsPerPage="3" search="Complex" modelo="admon" add="true" edit="true" delete="true" >
+			<atributos>
+				<atributo nombre="IdBanco" tipo="int" campo="CIdBanco" requerido="1" idunico="1" readonly="1" control="textbox" OnSearch="0" hiddeOnResults="0" />
+				<atributo nombre="NombreBanco" campo="CNombreBanco" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+				<atributo nombre="CuentaHabiente" campo="CCuentaHabiente" tipo="int" requerido="0" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+				
+			</atributos>
+
+            <relacionesEntidades>
+            </relacionesEntidades>
+		</entidad>
+	</modelo>
+</xml>
