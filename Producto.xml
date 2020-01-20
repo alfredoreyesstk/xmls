@@ -1,0 +1,27 @@
+<xml>
+
+	<modelo>
+
+		<entidad nombre="Producto" idToSelect="IdProducto" tabla="TProducto" gridRowsPerPage="3" search="Complex" modelo="admon" add="true" edit="true" delete="true" >
+
+			<atributos>
+
+				<atributo nombre="IdProducto" tipo="int" campo="CIdProducto" requerido="1" idunico="1" readonly="1" control="textbox" OnSearch="0" hiddeOnResults="0" />
+
+				<atributo nombre="NombreProducto" campo="CNombreProducto" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+
+				
+
+			</atributos>
+
+
+
+            <relacionesEntidades>
+
+            </relacionesEntidades>
+
+		</entidad>
+
+	</modelo>
+
+</xml>
