@@ -1,0 +1,15 @@
+﻿<xml>
+	<modelo>
+		<entidad nombre="Permiso" idToSelect="IdPermiso" tabla="TPermiso" gridRowsPerPage="3" search="Complex" modelo="admon" add="true" edit="true" delete="true" >
+			<atributos>
+				<atributo nombre="IdPermiso" tipo="int" campo="CIdPermiso" requerido="1" idunico="1" readonly="1" control="textbox" OnSearch="0" hiddeOnResults="0" />
+				<atributo nombre="NombrePermiso" campo="CNombrePermiso" tipo="string" requerido="1" idunico="0" readonly="0" control="textbox" OnSearch="1" hiddeOnResults="0" />
+				
+				
+			</atributos>
+
+            <relacionesEntidades>
+            </relacionesEntidades>
+		</entidad>
+	</modelo>
+</xml>
